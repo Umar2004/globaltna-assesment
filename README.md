@@ -56,15 +56,15 @@ Runs on **http://localhost:3000**
 
 **`backend/.env`**
 
-| Variable | Description |
-|---|---|
-| `MONGO_URI` | MongoDB Atlas connection string |
-| `PORT` | Port for the API server (default: 5000) |
+| Variable    | Description                             |
+| ----------- | --------------------------------------- |
+| `MONGO_URI` | MongoDB Atlas connection string         |
+| `PORT`      | Port for the API server (default: 5000) |
 
 **`frontend/.env.local`**
 
-| Variable | Description |
-|---|---|
+| Variable              | Description                                                      |
+| --------------------- | ---------------------------------------------------------------- |
 | `NEXT_PUBLIC_API_URL` | Base URL of the Express backend (default: http://localhost:5000) |
 
 ---
@@ -82,19 +82,12 @@ Inserts 8 sample jobs across all categories (Plumbing, Electrical, Painting, Joi
 
 ## API
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/api/jobs` | List all jobs — supports `?category=` `?status=` `?search=` |
-| GET | `/api/jobs/:id` | Get a single job |
-| POST | `/api/jobs` | Create a job |
-| PATCH | `/api/jobs/:id` | Update status only |
-| DELETE | `/api/jobs/:id` | Delete a job |
+| Method | Endpoint        | Description                                                 |
+| ------ | --------------- | ----------------------------------------------------------- |
+| GET    | `/api/jobs`     | List all jobs — supports `?category=` `?status=` `?search=` |
+| GET    | `/api/jobs/:id` | Get a single job                                            |
+| POST   | `/api/jobs`     | Create a job                                                |
+| PATCH  | `/api/jobs/:id` | Update status only                                          |
+| DELETE | `/api/jobs/:id` | Delete a job                                                |
 
 ---
-
-## Live Demo
-
-| | URL |
-|---|---|
-| Frontend | _add after deployment_ |
-| Backend | _add after deployment_ |
